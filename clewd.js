@@ -145,7 +145,7 @@ const ConfigPath = joinP(__dirname, './config.js'), LogPath = joinP(__dirname, '
 let uuidOrg, curPrompt = {}, prevPrompt = {}, prevMessages = [], prevImpersonated = false, Config = {
     Cookie: '',
     CookieArray: [],
-    Cookiecounter: 3,
+    Cookiecounter: 1,
     CookieIndex: 0,
     ProxyPassword: '',
     Ip: (process.env.Cookie || process.env.CookieArray) ? '0.0.0.0' : '127.0.0.1',
@@ -172,7 +172,7 @@ let uuidOrg, curPrompt = {}, prevPrompt = {}, prevMessages = [], prevImpersonate
         PassParams: false,
         ClearFlags: true,
         PreserveChats: false,
-        LogMessages: true,
+        LogMessages: false,
         FullColon: true,
         padtxt: 15000,
         xmlPlot: true,
